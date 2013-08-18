@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="ERP Home" id="d1" binding="#{backingBeanScope.erpHomeBean.d1}">
+        <af:form id="f1" binding="#{backingBeanScope.erpHomeBean.f1}">
+            <af:pageTemplate viewId="/WEB-INF/templates/mainErpTemplate.jsf" value="#{bindings.ptb1}" id="pt1"
+                             binding="#{backingBeanScope.erpHomeBean.pt1}">
+                <f:facet name="copyright"/>
+                <f:facet name="about"/>
+                <f:facet name="navigation"/>
+                <f:facet name="globalLinks"/>
+                <f:facet name="status"/>
+                <f:facet name="globalToolbar"/>
+                <f:facet name="globalSearch"/>
+                <f:facet name="globalTabs"/>
+                <f:facet name="welcome"/>
+                <f:facet name="innerToolbar"/>
+            </af:pageTemplate>
+        </af:form>
+    </af:document>
+    <!--oracle-jdev-comment:auto-binding-backing-bean-name:erpHomeBean-->
+</f:view>

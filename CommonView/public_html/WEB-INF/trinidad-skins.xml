@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skins xmlns="http://myfaces.apache.org/trinidad/skin">
+  <skin>
+    <id>erpSkin.desktop</id>
+    <family>erpSkin</family>
+    <extends>skyros-v1.desktop</extends>
+    <render-kit-id>org.apache.myfaces.trinidad.desktop</render-kit-id>
+    <style-sheet-name>skins/erpSkin/erpSkin.css</style-sheet-name>
+    <bundle-name>com.faceserp.common.view.skinBundle</bundle-name>
+    <metadata>
+      <description-bundle>com.faceserp.common.view.skinBundle</description-bundle>
+    </metadata>
+  </skin>
+</skins>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.2.66.68" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.faceserp.common.view" ClientType="Generic">
+  <pageMap>
+    <page path="/WEB-INF/templates/mainErpTemplate.jsf" usageId="com_faceserp_common_view_mainErpTemplatePageDef"/>
+    <page path="/ErpHome.jsf" usageId="com_faceserp_common_view_ErpHomePageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_faceserp_common_view_mainErpTemplatePageDef" path="templates.mainErpTemplatePageDef"/>
+    <page id="com_faceserp_common_view_ErpHomePageDef" path="com.faceserp.common.view.pageDefs.ErpHomePageDef"/>
+  </pageDefinitionUsages>
+</Application>
