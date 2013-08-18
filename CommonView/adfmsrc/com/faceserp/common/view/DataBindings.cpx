@@ -8,7 +8,7 @@
   </definitionFactories>  
   <pageMap>
     <page path="/WEB-INF/templates/mainErpTemplate.jsf" usageId="com_faceserp_common_view_mainErpTemplatePageDef"/>
-    <page path="/ErpHome.jsf" usageId="com_faceserp_common_view_ErpHomePageDef"/>
+    <page path="/pages/ErpHome.jsf" usageId="com_faceserp_common_view_ErpHomePageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="com_faceserp_common_view_mainErpTemplatePageDef" path="templates.mainErpTemplatePageDef"/>

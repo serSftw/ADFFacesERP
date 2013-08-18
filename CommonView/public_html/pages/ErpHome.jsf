@@ -18,5 +18,4 @@
             </af:pageTemplate>
         </af:form>
     </af:document>
-    <!--oracle-jdev-comment:auto-binding-backing-bean-name:erpHomeBean-->
 </f:view>

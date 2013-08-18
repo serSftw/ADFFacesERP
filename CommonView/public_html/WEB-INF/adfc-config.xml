@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
-  <managed-bean id="__1">
+  <view id="ErpHome">
+    <page>/pages/ErpHome.jsf</page>
+  </view>
+  <control-flow-rule id="__1">
+    <from-activity-id>*</from-activity-id>
+    <control-flow-case id="__2">
+      <from-outcome>erpHome</from-outcome>
+      <to-activity-id>ErpHome</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <managed-bean id="__3">
     <managed-bean-name>erpHomeBean</managed-bean-name>
     <managed-bean-class>com.faceserp.common.view.backing.ErpHome</managed-bean-class>
     <managed-bean-scope>backingBean</managed-bean-scope>
-    <!--oracle-jdev-comment:managed-bean-jsp-link:1ErpHome.jsf-->
-  </managed-bean>
+  </managed-bean>  
+  <managed-bean id="__4">
+    <managed-bean-name>erpTabsBean</managed-bean-name>
+    <managed-bean-class>com.faceserp.common.view.backing.ErpTabs</managed-bean-class>
+    <managed-bean-scope>pageFlow</managed-bean-scope>
+  </managed-bean>  
 </adfc-config>

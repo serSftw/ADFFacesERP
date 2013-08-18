@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:panelGridLayout id="pgl1">
+        <af:gridRow height="100%" id="gr1">
+            <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                <af:panelTabbed id="pt1" tabRemoval="all" binding="#{pageFlowScope.erpTabsBean.panelTabbed}"
+                                partialTriggers="links from menu" dimensionsFrom="parent">
+                    <af:forEach items="#{bindings.regions.taskFlowBindingList}" var="tf">
+                        <af:showDetailItem text="#{tf.name}" id="pb1"
+                                           itemListener="#{pageFlowScope.erpTabsBean.handleCloseTabItem}">
+                            <af:region value="#{tf.regionModel}" id="r1"/>
+                            <attribute name="tfName" value="#{tf.name}"/>
+                        </af:showDetailItem>
+                    </af:forEach>
+                </af:panelTabbed>
+            </af:gridCell>
+        </af:gridRow>
+    </af:panelGridLayout>
+</ui:composition>
