@@ -4,7 +4,8 @@
   <parameters/>
   <executables>
     <variableIterator id="variables"/>
-    <page path="templates.mainErpTemplatePageDef" id="ptb1" Refresh="ifNeeded"/>
+    <multiTaskFlow id="regions" taskFlowList="#{pageFlowScope.erpTabsBean.taskFlowList}"
+                   xmlns="http://xmlns.oracle.com/adf/controller/binding" activation="deferred"/>
   </executables>
   <bindings/>
 </pageDefinition>

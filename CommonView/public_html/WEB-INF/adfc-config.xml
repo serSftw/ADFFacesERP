@@ -19,5 +19,5 @@
     <managed-bean-name>erpTabsBean</managed-bean-name>
     <managed-bean-class>com.faceserp.common.view.backing.ErpTabs</managed-bean-class>
     <managed-bean-scope>pageFlow</managed-bean-scope>
-  </managed-bean>  
+  </managed-bean>   
 </adfc-config>

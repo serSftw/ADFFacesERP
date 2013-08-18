@@ -18,10 +18,10 @@ public class ErpTabs {
     private RichPanelTabbed panelTabbed;
     
     public ErpTabs() {
-//        TaskFlowBindingAttributes tfAttr = new TaskFlowBindingAttributes();
-//        tfAttr.setId("users");
-//        tfAttr.setTaskFlowId(new TaskFlowId("/WEB-INF/flows/users-tf.xml", "users-tf"));
-//        mTaskFlowBindingAttrs.add(tfAttr);    
+        TaskFlowBindingAttributes tfAttr = new TaskFlowBindingAttributes();
+        tfAttr.setId("login");
+        tfAttr.setTaskFlowId(new TaskFlowId("/WEB-INF/flows/login-tf.xml", "login-tf"));
+        mTaskFlowBindingAttrs.add(tfAttr);    
     }
     
     public List<TaskFlowBindingAttributes> getTaskFlowList() {
@@ -47,11 +47,11 @@ public class ErpTabs {
     }
 
     public void regionOneLaunch(ActionEvent actionEvent) {
-        int index = this.tfExist("users");
+        int index = this.tfExist("login");
         if (index < 0) {
             TaskFlowBindingAttributes tfAttr = new TaskFlowBindingAttributes();
-            tfAttr.setId("Users");
-            tfAttr.setTaskFlowId(new TaskFlowId("/WEB-INF/flows/users-tf.xml", "users-tf"));
+            tfAttr.setId("Login");
+            tfAttr.setTaskFlowId(new TaskFlowId("/WEB-INF/flows/login-tf.xml", "login-tf"));
             mTaskFlowBindingAttrs.add(0, tfAttr);
             if (this.getPanelTabbed().getChildCount() > 0) {            
                 this.makeSelected(0);   

@@ -1,5 +1,44 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <SDM>
    <OverallProperties
-      id="OverallProperties1"/>
+      id="OverallProperties1">
+      <property
+         name="y">239.20117</property>
+      <property
+         name="x">88.01758</property>
+   </OverallProperties>
+   <View
+      id="View2">
+      <property
+         name="activityId">ErpHome</property>
+      <property
+         name="page">/pages/ErpHome.jsf</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>ErpHome&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">83.5</property>
+      <property
+         name="x">246.53516</property>
+   </View>
+   <WildcardControlFlowRule
+      id="WildcardControlFlowRule3">
+      <property
+         name="activityId">*</property>
+      <property
+         name="y">84.0</property>
+      <property
+         name="x">88.01758</property>
+   </WildcardControlFlowRule>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase4"
+      from="WildcardControlFlowRule3"
+      to="View2">
+      <property
+         name="fromOutcome">erpHome</property>
+      <property
+         name="sdm:polyPoints">R50,124.01758,84.149414,205.53516,83.149414,L50</property>
+   </ControlFlowCase>
 </SDM>

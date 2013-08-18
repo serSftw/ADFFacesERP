@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:panelGridLayout id="pgl1">
+        <af:gridRow height="100%" id="gr1">
+      <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+        <!--<af:panelBox text="Login Form" id="pb1"> -->
+                <af:panelFormLayout id="pfl1">
+                    <af:inputText label="Username" id="it1" value="#{backingBeanScope.loginBean.username}"/>
+                    <af:inputText label="Password" id="it2" secret="true"
+                                  value="#{backingBeanScope.loginBean.password}"/>
+                    <af:button text="Login" id="cb1" action="#{backingBeanScope.loginBean.doLogin}"/>
+                </af:panelFormLayout>
+        <!--</af:panelBox>-->
+      </af:gridCell>
+    </af:gridRow>
+    </af:panelGridLayout>
+</ui:composition>
