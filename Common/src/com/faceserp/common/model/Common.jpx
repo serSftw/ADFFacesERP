@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="Common"
+  Version="12.1.2.66.68"
+  SeparateXMLFiles="true"
+  PackageName="com.faceserp.common.model"
+  ExportIntfPackage="">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../../../Common.jpr"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_OfflineConnection" Value="COMMON"/>
+    <Attr Name="_NamedConnection" Value="common"/>
+  </DesignTime>
+</JboProject>
